@@ -28,6 +28,12 @@ header{
 }
 header h1{
 	padding: 20px 0;
+	color: #3377B1;
+}
+header .course-title{
+	font-size: 18px;
+	color: #6B6B6B;
+	margin-left: 5px;
 }
 .header-inner{
 	max-width: 700px;
