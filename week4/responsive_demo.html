@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Property Demo</title>
+</head>
+<body>
+
+<header>
+	<nav>
+		<a href="masonry-layout.html">Masonry Layout</a>
+		<a href="display/display.html">Display</a>
+		<a href="../syllabus.html">Syllabus</a>
+		<a href="http://www.temple.edu/">Temple</a>
+	</nav>
+</header>
+
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 1</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box special">
+	<div class="display-box-inner">
+		<h1>Display 2</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 3</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 4</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+
+<style type="text/css">
+	
+body{
+	margin: 0;
+}
+
+
+
+h1,p{
+	display: block;
+}
+
+nav a {
+	margin: 20px;
+	color: red;
+}
+.display-box{
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+	margin-left: -4px;
+}
+
+.display-box-inner{
+	margin: 10px 2.5%;
+	border: 4px purple solid;
+	padding: 50px;
+}
+
+.special{
+	background-color: green;
+	transition: background-color 1s ease-in-out;
+}
+
+.special:hover{
+	background-color: white;
+}
+
+.none{
+	display: none;
+}
+
+
+
+@keyframes exampleAni {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+	.display-box{
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.display-box{
+		width: 25%;
+		animation: exampleAni 4s infinite;
+	}
+}
+
+.display-box h1:hover{
+	color: white;
+}
+
+
+
+
+</style>
+
+</body>
+</html>

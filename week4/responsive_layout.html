@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<header>
+	<nav>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</nav>
+</header>
+
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 1</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 2</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box">
+	<div class="display-box-inner">
+		<h1>Display 3</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+<div class="display-box special-box">
+	<div class="display-box-inner">
+		<h1>Display 4</h1>
+		<p>Lorem ipsum dolors</p>
+	</div>
+</div>
+
+
+<style type="text/css">
+	
+	body{
+		margin: 0;
+	}
+
+	.special-box{
+		background-color: white;
+	}
+	.special-box:hover{
+		background-color: red;
+		transition:background-color .25s ease-in-out;
+	}
+	h1,p{
+		display: block;
+	}
+
+	nav a {
+		margin: 20px;
+		color: red;
+	}
+	.display-box{
+		display: inline-block;
+		background-color: white;
+		width: 100%;
+		margin-left: -4px;
+	}
+
+	.display-box-inner{
+		margin: 10px 2.5%;
+		border: 4px purple solid;
+		padding: 50px;
+	}
+
+	.none{
+		display: none;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.display-box{
+			width: 50%;
+		}
+	}
+	@media only screen and (min-width: 1024px) {
+		.display-box{
+			width: 25%;
+		}
+	}
+	@media only screen and (min-width: 1390px) {
+		.display-box-inner{
+			padding: 60px;
+			border:5px solid green;
+			animation: exampleAni 4s infinite;
+		}
+	}
+
+	@keyframes exampleAni {
+	    0%   {background-color: red;}
+	    25%  {background-color: yellow;}
+	    50%  {background-color: blue;}
+	    100% {background-color: green;}
+	}
+</style>
+
+
+</body>
+</html>
